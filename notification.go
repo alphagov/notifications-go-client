@@ -1,6 +1,7 @@
 package notify
 
 import (
+	"errors"
 	"time"
 )
 
@@ -54,6 +55,36 @@ type NotificationEntry struct {
 
 // NotificationList is one the responses from GOV.UK Notify.
 type NotificationList struct {
+	Client *Client `json:"-"`
+
 	Notifications []Notification `json:"notifications"`
 	Links         Pagination     `json:"links"`
+}
+
+// Next page of the list should be loaded in place of the old one.
+func (nl *NotificationList) Next() error {
+	if nl.Links.Next == "" {
+		return errors.New("pagination: already on last page")
+	}
+
+	res, err := nl.Client.httpGet(nl.Links.Next, nil)
+	if err != nil {
+		return err
+	}
+
+	return jsonResponse(res.Body, nl)
+}
+
+// Previous page of the list should be loaded in place of the old one.
+func (nl *NotificationList) Previous() error {
+	if nl.Links.Previous == "" {
+		return errors.New("pagination: already on first page")
+	}
+
+	res, err := nl.Client.httpGet(nl.Links.Previous, nil)
+	if err != nil {
+		return err
+	}
+
+	return jsonResponse(res.Body, nl)
 }
