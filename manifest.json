@@ -1,5 +1,8 @@
 {
     "dependencies": {
+        "github.com/dgrijalva/jwt-go": {
+            "version": "v3.0.0"
+        },
         "github.com/onsi/ginkgo": {
             "version": "v1.3.1"
         },

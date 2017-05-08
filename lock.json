@@ -1,6 +1,14 @@
 {
-    "memo": "d6369d2df689c6cdc928a1bf4e18987c6ea9fef298e2bdd08b357b198ad5f65e",
+    "memo": "9e89b23e58f61603860b5430f38c4fe520f8be5ef13ef79b8ae4b7334ae4d1e5",
     "projects": [
+        {
+            "name": "github.com/dgrijalva/jwt-go",
+            "version": "v3.0.0",
+            "revision": "d2709f9f1f31ebcda9651b03077758c1f3a0018c",
+            "packages": [
+                "."
+            ]
+        },
         {
             "name": "github.com/onsi/ginkgo",
             "version": "v1.3.1",
