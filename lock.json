@@ -1,0 +1,81 @@
+{
+    "memo": "9e89b23e58f61603860b5430f38c4fe520f8be5ef13ef79b8ae4b7334ae4d1e5",
+    "projects": [
+        {
+            "name": "github.com/dgrijalva/jwt-go",
+            "version": "v3.0.0",
+            "revision": "d2709f9f1f31ebcda9651b03077758c1f3a0018c",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/onsi/ginkgo",
+            "version": "v1.3.1",
+            "revision": "77a8c1e5c40d6bb6c5eb4dd4bdce9763564f6298",
+            "packages": [
+                ".",
+                "config",
+                "internal/codelocation",
+                "internal/containernode",
+                "internal/failer",
+                "internal/leafnodes",
+                "internal/remote",
+                "internal/spec",
+                "internal/spec_iterator",
+                "internal/specrunner",
+                "internal/suite",
+                "internal/testingtproxy",
+                "internal/writer",
+                "reporters",
+                "reporters/stenographer",
+                "reporters/stenographer/support/go-colorable",
+                "reporters/stenographer/support/go-isatty",
+                "types"
+            ]
+        },
+        {
+            "name": "github.com/onsi/gomega",
+            "version": "v1.1.0",
+            "revision": "334b8f472b3af5d541c5642701c1e29e2126f486",
+            "packages": [
+                ".",
+                "format",
+                "internal/assertion",
+                "internal/asyncassertion",
+                "internal/oraclematcher",
+                "internal/testingtsupport",
+                "matchers",
+                "matchers/support/goraph/bipartitegraph",
+                "matchers/support/goraph/edge",
+                "matchers/support/goraph/node",
+                "matchers/support/goraph/util",
+                "types"
+            ]
+        },
+        {
+            "name": "golang.org/x/sys",
+            "branch": "master",
+            "revision": "9ccfe848b9db8435a24c424abbc07a921adf1df5",
+            "packages": [
+                "unix"
+            ]
+        },
+        {
+            "name": "gopkg.in/jarcoal/httpmock.v1",
+            "branch": "v1",
+            "revision": "cf52904a3cf0f78f199ecade6a6df8e245d5b25a",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "gopkg.in/yaml.v2",
+            "branch": "v2",
+            "revision": "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
