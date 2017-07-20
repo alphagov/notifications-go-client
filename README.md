@@ -1,5 +1,8 @@
 # GOV.UK Notify Go client
 
+## Note to anyone cloning this repo
+Please be aware that is currently an unsupported client for GOV.UK Notify. If you do want to use this client please contact the Notify team using [slack](https://ukgovernmentdigital.slack.com/messages/govuk-notify) or by [submitting feedback](https://www.notifications.service.gov.uk/support). We need to make sure this repo upholds our standards and is updated with new features, has integration tests and is included in our development pipeline. 
+
 ## Installing
 
 The Notify Go Client can be installed with
