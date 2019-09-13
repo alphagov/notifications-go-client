@@ -29,7 +29,7 @@ func main() {
 	}
 
 	// Initialise the client.
-	client, err := notify.Client.New(config)
+	client, err := notify.New(config)
 	if err != nil {
 		panic(err)
 	}
